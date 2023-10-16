@@ -1,4 +1,5 @@
 import { type LinksFunction } from "@remix-run/node";
+import AuthForm from "~/components/auth/AuthForm";
 import authStyles from "~/styles/auth.css";
 
 export const links: LinksFunction = () => [
@@ -6,7 +7,7 @@ export const links: LinksFunction = () => [
 ];
 
 const AuthPage: React.FC = () => {
-  return <h1>Auth Page</h1>;
+  return <AuthForm />;
 };
 
 export default AuthPage;
