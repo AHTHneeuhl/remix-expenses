@@ -1,5 +1,18 @@
-const RawPage: React.FC = () => {
-  return <h1>Raw Page</h1>;
-};
+const dummyExpenses = [
+  {
+    id: "e1",
+    title: "First Expenses",
+    amount: 12.99,
+    date: new Date().toISOString(),
+  },
+  {
+    id: "e2",
+    title: "Second Expenses",
+    amount: 24.99,
+    date: new Date().toISOString(),
+  },
+];
 
-export default RawPage;
+export const loader = () => {
+  return dummyExpenses;
+};
